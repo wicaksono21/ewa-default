@@ -145,6 +145,7 @@ class EWA:
         #    {"role": "system", "content": MODULE_LEARNING_OBJECTIVES},
         #    {"role": "system", "content": READINGS_INDEX}
        #]
+        messages = []
 
                
         # Check for review/scoring related keywords
