@@ -1,0 +1,6 @@
+streamlit
+openai>=1.40.0
+firebase-admin
+pytz
+pandas
+requests
