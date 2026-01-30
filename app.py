@@ -160,7 +160,7 @@ class EWA:
             max_tokens = 5000
             context_window = 10  # Larger context window for review tasks         
         else:            
-            max_tokens = 400
+            max_tokens = 4500
             context_window = 6   # Smaller context window for regular chat
 
         # On-demand reading injection based on title keywords
