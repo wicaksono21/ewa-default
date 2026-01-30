@@ -397,7 +397,7 @@ def main():
         return
 
     # Main chat interface
-    st.title("Academic Essay Writing Assistant - TEAP 2025/2026")
+    st.title("Academic Essay Writing Assistant")
     app.render_sidebar()
 
      # Display message history
