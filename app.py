@@ -8,8 +8,8 @@ import requests
 
 # Import configurations
 from stageprompts import INITIAL_ASSISTANT_MESSAGE
-from reviewinstructions import MODULE_LEARNING_OBJECTIVES, SYSTEM_INSTRUCTIONS
-from readings import READINGS_INDEX, READINGS_BY_TITLE
+#from reviewinstructions import MODULE_LEARNING_OBJECTIVES, SYSTEM_INSTRUCTIONS
+#from readings import READINGS_INDEX, READINGS_BY_TITLE
 
 # Disclaimer 
 DISCLAIMER = (
@@ -140,10 +140,10 @@ class EWA:
         st.chat_message("user").write(f"{time_str} {prompt}")
 
         # Build messages context
-        messages = [
-            {"role": "system", "content": SYSTEM_INSTRUCTIONS},
-            {"role": "system", "content": MODULE_LEARNING_OBJECTIVES},
-            {"role": "system", "content": READINGS_INDEX}
+        #messages = [
+        #    {"role": "system", "content": SYSTEM_INSTRUCTIONS},
+        #    {"role": "system", "content": MODULE_LEARNING_OBJECTIVES},
+        #    {"role": "system", "content": READINGS_INDEX}
        ]
 
                
