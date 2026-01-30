@@ -163,17 +163,17 @@ class EWA:
             context_window = 6   # Smaller context window for regular chat
 
         # On-demand reading injection based on title keywords
-        prompt_lower = prompt.lower()
-        for title_snippet, reading_text in READINGS_BY_TITLE.items():
-            if title_snippet in prompt_lower:
-                messages.append({
-                    "role": "system",
-                    "content": (
-                        f"Relevant course reading for this query "
-                        f"(full text for reference):\n\n{reading_text}"
-                    ),
-                })
-                break  # only inject one reading per query
+        #prompt_lower = prompt.lower()
+        #for title_snippet, reading_text in READINGS_BY_TITLE.items():
+        #    if title_snippet in prompt_lower:
+        #        messages.append({
+        #            "role": "system",
+        #            "content": (
+        #                f"Relevant course reading for this query "
+        #                f"(full text for reference):\n\n{reading_text}"
+        #            ),
+        #        })
+        #        break  # only inject one reading per query
 
         # Add conversation history (strip invalid keys like timestamp)
         if 'messages' in st.session_state:
